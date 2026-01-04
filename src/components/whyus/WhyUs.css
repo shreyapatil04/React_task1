@@ -1,0 +1,31 @@
+.whyus {
+  background: var(--bg-dark);
+  padding: 100px 24px;
+  color: var(--text-main);
+}
+
+.whyus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.whyus-card {
+  padding: 28px 22px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.whyus-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--hover-shadow);
+}
+
+.whyus-card h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}

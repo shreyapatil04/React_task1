@@ -1,0 +1,11 @@
+.footer {
+  background: #0b0f19;
+  color: var(--text-muted);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.footer h3 {
+  color: var(--accent);
+  margin-bottom: 10px;
+}
