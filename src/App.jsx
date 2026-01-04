@@ -10,7 +10,7 @@ import CTA from "./components/cta/CTA";
 import Footer from "./components/footer/Footer";
 const App = () => {
   return (
-    <div>
+    <div className="app-bg">
       <Navbar />
       <Hero />
       <Services />

@@ -29,7 +29,7 @@ const Services = () => {
       <div className="services-container">
         <h2 className="section-title">Our Services</h2>
         <p className="section-subtitle">
-          We offer a wide range of digital solutions to help businesses grow.
+          <b>We offer a wide range of digital solutions to help businesses grow.</b>
         </p>
 
         <div className="services-grid">

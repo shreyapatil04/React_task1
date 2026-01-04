@@ -12,7 +12,7 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background: var(--bg-dark);
+  background: radial-gradient(circle at top, #022817, #02061a);
   color: var(--text-main);
   scroll-behavior: smooth;
 }
