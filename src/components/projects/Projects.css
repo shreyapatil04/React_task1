@@ -1,8 +1,39 @@
+.projects-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0 24px;
+}
+
+/* Section title & subtitle */
+.section-title {
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.section-subtitle {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Grid for projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 60px;
+}
+
+/* Project card */
 .project-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 260px; 
+  min-height: 260px; 
   border-radius: 14px;
   position: relative;
   overflow: hidden;
@@ -26,7 +57,7 @@
   flex-direction: column;
   justify-content: center;
   opacity: 1; 
-  transition: backgroud 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .project-card:hover .project-overlay {
@@ -34,22 +65,82 @@
   transform: translateY(-4px);
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 28px;
-  margin-top: 60px;
-}
-
-.projects-container {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-  padding: 0 24px;
-}
-
 .project-overlay h3 {
   color: var(--accent);
+  margin-bottom: 10px;
 }
 
+.project-overlay p,
+.project-overlay span {
+  color: var(--text-muted);
+}
 
+/* ================== */
+/* MOBILE RESPONSIVE */
+/* ================== */
+@media (max-width: 1024px) {
+  .projects-grid {
+    gap: 24px;
+  }
+
+  .project-card {
+    min-height: 240px;
+  }
+
+  .project-overlay {
+    padding: 24px 18px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    gap: 20px;
+  }
+
+  .project-card {
+    min-height: 220px;
+  }
+
+  .project-overlay {
+    padding: 20px 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 16px;
+  }
+
+  .project-card {
+    min-height: 200px;
+  }
+
+  .project-overlay {
+    padding: 16px 12px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+}

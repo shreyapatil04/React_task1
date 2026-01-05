@@ -1,8 +1,12 @@
+import { useState } from "react";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false); // close menu after click
   };
 
   return (
@@ -10,7 +14,13 @@ const Navbar = () => {
       <div className="nav-container">
         <h2 className="logo">Career<span>Craft</span></h2>
 
-        <ul className="nav-links">
+        {/* Hamburger for mobile */}
+        <div
+          className={`hamburger ${menuOpen ? "active" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        ></div>
+
+        <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
           <li onClick={() => scrollToSection("home")}>Home</li>
           <li onClick={() => scrollToSection("services")}>Services</li>
           <li onClick={() => scrollToSection("projects")}>Projects</li>

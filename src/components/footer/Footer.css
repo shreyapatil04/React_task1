@@ -2,9 +2,72 @@
   color: var(--text-muted);
   padding: 40px 24px;
   text-align: center;
+  background: var(--bg-dark);
 }
 
 .footer h3 {
-  color: var(--accent);
+  font-size: 22px;
   margin-bottom: 10px;
+  color: white; /* "Career" */
+}
+
+.footer h3 span {
+  color: var(--accent); /* "Craft" */
+}
+
+.footer p {
+  font-size: 14px;
+  margin-top: 4px;
+  color: var(--text-muted);
+}
+
+.footer-social {
+  margin-top: 12px;
+}
+
+.footer-social a {
+  color: var(--accent); /* green links */
+  font-size: 13px;      /* small text */
+  margin: 0 6px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #00ff88; /* slightly brighter green on hover */
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 16px;
+  }
+
+  .footer h3 {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+
+  .footer-social a {
+    font-size: 12px;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer h3 {
+    font-size: 18px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .footer-social a {
+    font-size: 11px;
+    margin: 0 3px;
+  }
 }

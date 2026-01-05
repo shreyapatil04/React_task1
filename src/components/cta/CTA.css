@@ -1,5 +1,4 @@
 .cta {
-  
   color: var(--text-main);
   padding: 80px 24px;
   text-align: center;
@@ -13,7 +12,7 @@
 .cta h2 {
   font-size: 36px;
   margin-bottom: 16px;
-  color: var(--accent);
+  color: var(--accent); /* green */
 }
 
 .cta p {
@@ -27,13 +26,68 @@
   font-size: 16px;
   font-weight: 600;
   border: none;
-  border-radius: 8px;
-  background: var(--accent);
-  color: var(--bg-dark);
+  border-radius: 999px; /* pill-shaped */
+  background: var(--accent); /* green */
+  color: var(--bg-dark); /* dark text */
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .cta button:hover {
   transform: scale(1.05);
+}
+
+/* ================== */
+/* MOBILE RESPONSIVE */
+/* ================== */
+@media (max-width: 1024px) {
+  .cta {
+    padding: 60px 24px;
+  }
+
+  .cta h2 {
+    font-size: 32px;
+  }
+
+  .cta p {
+    font-size: 15px;
+  }
+
+  .cta button {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: 50px 16px;
+  }
+
+  .cta h2 {
+    font-size: 28px;
+  }
+
+  .cta p {
+    font-size: 14px;
+  }
+
+  .cta button {
+    width: 100%; /* full-width on mobile */
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta h2 {
+    font-size: 24px;
+  }
+
+  .cta p {
+    font-size: 13px;
+  }
+
+  .cta button {
+    font-size: 14px;
+  }
 }

@@ -4,6 +4,28 @@
   color: var(--text-main);
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Section title & subtitle */
+.section-title {
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.section-subtitle {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Grid for cards */
 .whyus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -11,12 +33,7 @@
   margin-top: 50px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
-}
-
+/* Cards */
 .whyus-card {
   padding: 28px 22px;
   border-radius: 12px;
@@ -34,4 +51,66 @@
 .whyus-card h3 {
   color: var(--accent);
   margin-bottom: 10px;
+}
+
+/* ================== */
+/* MOBILE RESPONSIVE */
+/* ================== */
+@media (max-width: 1024px) {
+  .whyus {
+    padding: 80px 24px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .whyus-card {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyus {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .whyus-grid {
+    gap: 20px;
+  }
+
+  .whyus-card {
+    padding: 20px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .whyus-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+    gap: 16px;
+  }
+
+  .whyus-card {
+    padding: 16px 12px;
+  }
 }

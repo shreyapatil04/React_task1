@@ -1,9 +1,30 @@
 .process {
-  /*background: #020617; Dark card base */
   padding: 100px 24px;
   color: var(--text-main);
 }
 
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Section title & subtitle */
+.section-title {
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.section-subtitle {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Grid for steps */
 .process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -11,12 +32,13 @@
   margin-top: 50px;
 }
 
+/* Cards */
 .process-card {
   background: var(--bg-card);
   padding: 32px 24px;
   border-radius: 12px;
   border: 1px solid var(--border-soft);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -28,9 +50,10 @@
 }
 
 .process-card h3 {
-   color: var(--accent);
+  color: var(--accent);
 }
 
+/* Step number */
 .step-number {
   font-size: 36px;
   font-weight: 700;
@@ -39,4 +62,84 @@
   position: absolute;
   top: 16px;
   right: 20px;
+}
+
+/* ================== */
+/* MOBILE RESPONSIVE */
+/* ================== */
+@media (max-width: 1024px) {
+  .process {
+    padding: 80px 24px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+  }
+
+  .process-card {
+    padding: 28px 20px;
+  }
+
+  .step-number {
+    font-size: 30px;
+    top: 12px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .process {
+    padding: 60px 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .process-grid {
+    gap: 20px;
+  }
+
+  .process-card {
+    padding: 24px 16px;
+  }
+
+  .step-number {
+    font-size: 28px;
+    top: 8px;
+    right: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+    gap: 16px;
+  }
+
+  .process-card {
+    padding: 20px 12px;
+  }
+
+  .step-number {
+    font-size: 24px;
+    top: 6px;
+    right: 8px;
+  }
 }
