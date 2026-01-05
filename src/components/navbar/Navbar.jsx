@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false); // close menu after click
+    setMenuOpen(false); 
   };
 
   return (
@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="nav-container">
         <h2 className="logo">Career<span>Craft</span></h2>
 
-        {/* Hamburger for mobile */}
+        
         <div
           className={`hamburger ${menuOpen ? "active" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}

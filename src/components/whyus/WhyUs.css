@@ -10,7 +10,6 @@
   text-align: center;
 }
 
-/* Section title & subtitle */
 .section-title {
   font-size: 42px;
   margin-bottom: 24px;
@@ -25,7 +24,7 @@
   color: var(--text-muted);
 }
 
-/* Grid for cards */
+
 .whyus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -33,7 +32,6 @@
   margin-top: 50px;
 }
 
-/* Cards */
 .whyus-card {
   padding: 28px 22px;
   border-radius: 12px;
@@ -53,9 +51,8 @@
   margin-bottom: 10px;
 }
 
-/* ================== */
 /* MOBILE RESPONSIVE */
-/* ================== */
+
 @media (max-width: 1024px) {
   .whyus {
     padding: 80px 24px;
@@ -106,7 +103,7 @@
   }
 
   .whyus-grid {
-    grid-template-columns: 1fr; /* Stack cards vertically */
+    grid-template-columns: 1fr; 
     gap: 16px;
   }
 

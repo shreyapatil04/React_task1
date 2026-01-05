@@ -9,7 +9,7 @@
   text-align: center;
 }
 
-/* Section title & subtitle */
+
 .section-title {
   font-size: 42px;
   margin-bottom: 24px;
@@ -24,7 +24,7 @@
   color: var(--text-muted);
 }
 
-/* Grid for steps */
+
 .process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -32,7 +32,7 @@
   margin-top: 50px;
 }
 
-/* Cards */
+
 .process-card {
   background: var(--bg-card);
   padding: 32px 24px;
@@ -53,7 +53,7 @@
   color: var(--accent);
 }
 
-/* Step number */
+
 .step-number {
   font-size: 36px;
   font-weight: 700;
@@ -64,9 +64,9 @@
   right: 20px;
 }
 
-/* ================== */
+
 /* MOBILE RESPONSIVE */
-/* ================== */
+
 @media (max-width: 1024px) {
   .process {
     padding: 80px 24px;
@@ -129,7 +129,7 @@
   }
 
   .process-grid {
-    grid-template-columns: 1fr; /* Stack cards vertically */
+    grid-template-columns: 1fr; 
     gap: 16px;
   }
 

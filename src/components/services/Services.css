@@ -3,7 +3,7 @@
   background: radial-gradient(circle at left, #052e1c, #020617);
 }
 
-/* SECTION TITLES */
+
 .section-title {
   text-align: center;
   font-size: 42px;
@@ -19,7 +19,7 @@
   color: var(--text-muted);
 }
 
-/* SERVICES GRID */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -27,7 +27,7 @@
   margin-top: 50px;
 }
 
-/* SERVICE CARD */
+
 .service-card {
   background: var(--bg-card);
   padding: 32px;
@@ -51,9 +51,9 @@
   color: var(--text-muted);
 }
 
-/* ================== */
+
 /* MOBILE RESPONSIVE */
-/* ================== */
+
 @media (max-width: 1024px) {
   .services {
     padding: 80px 40px;
@@ -100,7 +100,7 @@
   }
 
   .services-grid {
-    grid-template-columns: 1fr; /* Stack cards vertically */
+    grid-template-columns: 1fr; 
     gap: 16px;
   }
 

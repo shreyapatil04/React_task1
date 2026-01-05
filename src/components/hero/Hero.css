@@ -32,7 +32,7 @@
   display: flex;
   gap: 16px;
   align-items: center;
-  flex-wrap: wrap; /* allow buttons to wrap on small screens */
+  flex-wrap: wrap; 
 }
 
 .hero-buttons button {
@@ -45,31 +45,31 @@
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
-/* Primary button - green */
+
 .primary-btn {
-  background: var(--accent); /* green */
-  color: #020617; /* dark text */
+  background: var(--accent); 
+  color: #020617; 
   border-radius: 999px;
 }
 
-/* Secondary button - outline green */
+
 .secondary-btn {
   background: transparent;
-  border: 1px solid var(--accent); /* green border */
-  color: var(--accent); /* green text */
+  border: 1px solid var(--accent); 
+  color: var(--accent); 
   border-radius: 999px;
 }
 
-/* Hover effect keeps green */
+
 .hero-buttons button:hover {
   transform: scale(1.05);
   background: var(--accent);
   color: #020617;
 }
 
-/* ================== */
+
 /* MOBILE RESPONSIVE */
-/* ================== */
+
 @media (max-width: 1024px) {
   .hero {
     padding: 0 40px;
@@ -104,12 +104,12 @@
   }
 
   .hero-buttons {
-    flex-direction: column; /* stack buttons */
+    flex-direction: column; 
     gap: 12px;
   }
 
   .hero-buttons button {
-    width: 100%; /* full width buttons on mobile */
+    width: 100%; 
     padding: 12px 0;
   }
 }
