@@ -27,6 +27,10 @@
   box-shadow: var(--hover-shadow);
 }
 
+.process-card h3 {
+   color: var(--accent);
+}
+
 .step-number {
   font-size: 36px;
   font-weight: 700;

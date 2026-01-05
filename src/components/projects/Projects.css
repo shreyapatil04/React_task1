@@ -48,4 +48,8 @@
   padding: 0 24px;
 }
 
+.project-overlay h3 {
+  color: var(--accent);
+}
+
 
